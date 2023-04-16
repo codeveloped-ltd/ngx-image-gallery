@@ -1,7 +1,7 @@
 # ngx-image-gallery
 Angular 9 modal and inline image gallery
 
-[![preview](https://i.imgur.com/1gGxBLd.jpg)](https://theorganproject.org/reinsertion)
+[![preview](https://storage.googleapis.com/the-organ-project/ngx-image-gallery.png)](https://theorganproject.org/reinsertion)
 
 ## Prerequisites
 
