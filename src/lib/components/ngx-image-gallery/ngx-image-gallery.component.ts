@@ -1,17 +1,18 @@
 import {
-    ChangeDetectorRef,
-    Component,
-    ElementRef,
-    EventEmitter,
-    HostBinding,
-    HostListener,
-    Input,
-    OnChanges,
-    OnInit,
-    Output,
-    Renderer2,
-    SimpleChanges,
-    ViewChild
+  ChangeDetectorRef,
+  Component,
+  ElementRef,
+  EventEmitter,
+  HostBinding,
+  HostListener,
+  Input,
+  OnChanges,
+  OnInit,
+  Output,
+  Renderer2,
+  SimpleChanges,
+  ViewChild,
+  ChangeDetectionStrategy
 } from '@angular/core';
 
 import {assign, debounce} from 'lodash';
@@ -47,8 +48,10 @@ const DEFAULT_CONF: GALLERY_CONF = {
 };
 
 @Component({
+    standalone: false,
     selector: 'ngx-image-gallery',
     templateUrl: './ngx-image-gallery.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./ngx-image-gallery.component.scss']
 })
 export class NgxImageGalleryComponent implements OnInit, OnChanges {
