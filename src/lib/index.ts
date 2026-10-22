@@ -12,7 +12,9 @@ export * from './ngx-image-gallery.conf';
 
 @NgModule({
     imports: [
-        CommonModule,
+        CommonModule
+    ],
+    declarations: [
         NgxImageGalleryComponent,
         MouseWheelDirective,
         ClickOutsideDirective
